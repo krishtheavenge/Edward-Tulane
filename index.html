@@ -1,0 +1,136 @@
+<html lang="en">
+    <head>
+        <title>Snackady Snacks</title>
+        <script src="javascript.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+       
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;display=swap" rel="stylesheet">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                console.log('x==' + x.style);
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    console.log('block' + x.style.display);
+
+                } else {
+                    x.style.display = "none";
+                    console.log('none' + x.style.display);
+                }
+            }
+        </script>
+    </head>
+    <body style="overflow-x: scroll; overflow:scroll;">
+
+        
+    <div id="top"  >
+        <div class="topnav">
+        <a href="#home" class="active">Home</a>
+        <a href="Edward.html" class="active">About</a>
+        <a href="character.html" class="active">Character List</a>
+        <a href="hello.html" class="active">Test!!</a>
+        
+    </div>    
+    
+
+        <!--nav id="thing" class="navbar-inverse my_nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+        
+                </ul>
+                <h1>Snackady Snacks</h1>
+            </div>
+        </nav-->
+
+        <section id="home">
+        
+            <marquee  scrollamount="15" speed="fast" direction="left"><img src="images.jpg"></marquee>
+            <br>
+            <br> <br>
+            <br>
+                <marquee scrollamount="15" speed="fast" direction="right"><img src="s-l500.jpg">
+                </marquee>
+                <img id="img" src="ed_tulane_50017f84-00d6-457f-a6e9-a1039a73415e.jpg">
+                <marquee scrollamount="15" speed="fast" direction="left"><img src="812598.jpg"></marquee>
+                <button class="btn btn-primary" onclick="next()" id="hello">Next</button>
+        </section>
+       
+    </body>
+</html>
