@@ -385,3 +385,8 @@ html {
   width: 400;
   height: 400;
 }
+.carousel-caption p{
+color: rgba(229, 255, 0, 0.911);
+font-weight: bold;
+font-size: medium;
+}
